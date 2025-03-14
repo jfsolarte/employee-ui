@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
           this.filteredEmployees = [employee]
         },
         () => {
+          this.employeeIs = false;
           this.filteredEmployees = []
         }
       );
