@@ -1,5 +1,8 @@
 # Employee Management Application
 
+## Advertencia ⚠️
+El backend de esta aplicación consume el servicio `http://dummy.restapiexample.com/api/v1/employees`, el cual ha estado presentando problemas de acceso y, en ocasiones, retorna el código `429 - Too Many Requests`. Esto puede afectar la funcionalidad de la aplicación y generar errores intermitentes en las solicitudes.
+
 ## Descripción
 Esta es una aplicación desarrollada en **Angular 19** con **Bootstrap**, que permite buscar y visualizar la información de empleados mediante una interfaz amigable. La aplicación incluye una vista para la búsqueda de empleados, un perfil detallado con imagen y un menú de navegación.
 

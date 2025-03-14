@@ -28,17 +28,19 @@ export class HomeComponent implements OnInit {
   }
 
   handleSearch(employeeId: string) {
-    this.employeeIs = true;
+    this.employeeIs = false;
     if (!employeeId) {
       this.filteredEmployees = this.employees;
     } else {
       this.employeeService.getEmployeeById(employeeId).subscribe(
         employee => {
           this.employee= employee
+          this.employeeIs = true;
           this.filteredEmployees = [employee]
         },
         () => {
           this.employeeIs = false;
+          this.employee = null
           this.filteredEmployees = []
         }
       );
