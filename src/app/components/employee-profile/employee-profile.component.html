@@ -1,0 +1,10 @@
+{{ employee | json }}
+<div *ngIf="employee" class="card">
+    <img [src]="employee.profileImage" class="card-img-top" alt="Employee Photo">
+    <div class="card-body">
+        <h5 class="card-title">{{ employee.employeeName }}</h5>
+        <p class="card-text"><strong>Position:</strong> {{ employee.employeeAge }}</p>
+        <p class="card-text"><strong>Position:</strong> {{ employee.employeeSalary | currency }}</p>
+        <p class="card-text"><strong>Salary:</strong> ${{ employee.employeeAnualSalary | currency }}</p>
+    </div>
+</div>

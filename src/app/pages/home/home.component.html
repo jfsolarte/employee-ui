@@ -1,0 +1,9 @@
+<h2>Employee Search</h2>
+<app-employee-search (search)="handleSearch($event)"></app-employee-search>
+
+<div *ngIf="employeeIs">
+    hola
+<app-employee-profile  [employee]="employee"></app-employee-profile>
+</div>
+<app-employee-table [employees]="filteredEmployees"></app-employee-table>
+

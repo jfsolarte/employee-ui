@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Anual Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.employeeName }}</td>
+        <td>{{ emp.employeeAge }}</td>
+        <td>{{ emp.employeeSalary | currency }}</td>
+        <td>{{ emp.employeeAnualSalary | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
